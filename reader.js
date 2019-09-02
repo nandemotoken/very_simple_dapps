@@ -9,6 +9,8 @@ mycontract = new web3js.eth.Contract(ABI , Address);
 //1.00-beta.36と表示されるのが正しい
 console.log( Web3.version );
 
+//metamask login処理
+ethereum.enable().then(console.log);
 
 //---------------------read--------------------------
 //コントラクトのread処理は次の書式に統一します。
