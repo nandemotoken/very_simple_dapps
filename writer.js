@@ -48,22 +48,27 @@ const ABI = [
   }
 ]
 
+//--------------ここからメイン処理---------------
+//------writerはボタンが押されたときに動くようにするので、ボタンと関連させる関数を作ってメイン処理を入れる--------
+
+function myButtonClicked() {
+
 //metamaskの準備
 web3js = new Web3(web3.currentProvider);	
 //スマートコントラクト読み込み
 mycontract = new web3js.eth.Contract(ABI , Address);
 
 //1.00-beta.36と表示されるのが正しい
-console.log( "writer.js_is_checking_web3.js_version:" + Web3.version );
+console.log( "writer.js_is_checking_web3.js_version..." + Web3.version );
 
 
 
-var tmp_info;
-function w_function1( hidari , migi ){ mycontract.methods.setnumber(tmp_info).send({from: migi[0] });}
-function simple_test(){ web3js.eth.getAccounts( w_function1 ); }
-function w_f1( t ){ 
-	tmp_info = Number(t);
-	simple_test();
+// var tmp_info;
+// function w_function1( hidari , migi ){ mycontract.methods.setnumber(tmp_info).send({from: migi[0] });}
+// function simple_test(){ web3js.eth.getAccounts( w_function1 ); }
+// function w_f1( t ){ 
+// 	tmp_info = Number(t);
+// 	simple_test();
+// }
+
 }
-
-
