@@ -63,7 +63,9 @@ mycontract = new web3js.eth.Contract(ABI , Address);
 //1.00-beta.36と表示されるのが正しい
 console.log( "writer.js_is_checking_web3.js_version..." + Web3.version );
 
-console.log(document.getElementById('id100'))
+console.log(document.getElementById('id100').value)
+
+mycontract.methods.setnumber(tmp_info).send({from: migi[0] }
 
 // var tmp_info;
 // function w_function1( hidari , migi ){ mycontract.methods.setnumber(tmp_info).send({from: migi[0] });}
@@ -72,5 +74,7 @@ console.log(document.getElementById('id100'))
 // 	tmp_info = Number(t);
 // 	simple_test();
 // }
+
+return "writer.js is called"
 
 }
