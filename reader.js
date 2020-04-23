@@ -1,7 +1,7 @@
 //環境設定
 
 //remixのボタンを押して取得したコントラクトアドレスを貼り付け
-const Address = "0x66325a60194e087388ac11c92909a5c5ba170876";
+const Address = "0x300359Af32c7964E6DDafe79C12E3024dc7539C7";
 
 //remixのボタンを押して取得したABIを貼り付け
 const ABI = [
