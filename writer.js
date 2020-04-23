@@ -1,52 +1,54 @@
 //---------------環境設定-----------------
 //remixのボタンを押して取得したコントラクトアドレスを貼り付け
-const Address = "0x300359Af32c7964E6DDafe79C12E3024dc7539C7";
+//ただし、同じ値をreader.jsで読み込んでいるのでここはコメントアウト
+// const Address = "0x300359Af32c7964E6DDafe79C12E3024dc7539C7";
 
 //remixのボタンを押して取得したABIを貼り付け
-const ABI = [
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "n",
-        "type": "uint256"
-      }
-    ],
-    "name": "setnumber",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "get3",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "getnumber",
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  }
-]
+//ただし、同じ値をreader.jsで読み込んでいるのでここはコメントアウト
+// const ABI = [
+//   {
+//     "constant": false,
+//     "inputs": [
+//       {
+//         "name": "n",
+//         "type": "uint256"
+//       }
+//     ],
+//     "name": "setnumber",
+//     "outputs": [],
+//     "payable": false,
+//     "stateMutability": "nonpayable",
+//     "type": "function"
+//   },
+//   {
+//     "constant": true,
+//     "inputs": [],
+//     "name": "get3",
+//     "outputs": [
+//       {
+//         "name": "",
+//         "type": "uint256"
+//       }
+//     ],
+//     "payable": false,
+//     "stateMutability": "view",
+//     "type": "function"
+//   },
+//   {
+//     "constant": true,
+//     "inputs": [],
+//     "name": "getnumber",
+//     "outputs": [
+//       {
+//         "name": "",
+//         "type": "uint256"
+//       }
+//     ],
+//     "payable": false,
+//     "stateMutability": "view",
+//     "type": "function"
+//   }
+// ]
 
 //--------------ここからメイン処理---------------
 //------writerはボタンが押されたときに動くようにするので、ボタンと関連させる関数を作ってメイン処理を入れる--------
