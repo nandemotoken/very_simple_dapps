@@ -65,20 +65,11 @@ console.log( "writer.js_is_checking_web3.js_version..." + Web3.version );
 
 console.log(document.getElementById('id100').value)
 
+
 web3js.eth.getAccounts().then((resolve)=>{
+//上記はコントラクトへトランザクションを送るための定型文(Metamaskが重いのでthenでの処理待ちが必須)
 	mycontract.methods.setnumber(document.getElementById('id100').value).send({from: resolve[0]})
+	console.log("resolve[0]_is_your_Address:"+resolve[0])
 })
-
-// mycontract.methods.setnumber(tmp_info).send({from: migi[0] }
-
-// var tmp_info;
-// function w_function1( hidari , migi ){ mycontract.methods.setnumber(tmp_info).send({from: migi[0] });}
-// function simple_test(){ web3js.eth.getAccounts( w_function1 ); }
-// function w_f1( t ){ 
-// 	tmp_info = Number(t);
-// 	simple_test();
-// }
-
-return "writer.js is called"
 
 }
