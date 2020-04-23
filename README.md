@@ -3,7 +3,7 @@ Very Simple DappSはDappSの作り方を学ぶためのとてもシンプルな�
 https://remix.ethereum.org/ からデプロイしたスマートコントラクトを利用するためのWebページを作るすることができます
 
 # このシステムで作成できるもの
-https://nandemotoken.github.io/very_simple_dapps/
+https://nandemotoken.github.io/very_simple_dapps/  
 githubアカウントがあれば、上記のDappSを作ることができます！
 
 
