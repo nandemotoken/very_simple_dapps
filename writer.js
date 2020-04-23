@@ -65,6 +65,10 @@ console.log( "writer.js_is_checking_web3.js_version..." + Web3.version );
 
 console.log(document.getElementById('id100').value)
 
+web3js.eth.getAccounts().then((resolve)=>{
+	mycontract.methods.setnumber(document.getElementById('id100').value).send({from: resolve[0]})
+})
+
 // mycontract.methods.setnumber(tmp_info).send({from: migi[0] }
 
 // var tmp_info;
