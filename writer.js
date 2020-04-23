@@ -65,7 +65,7 @@ console.log( "writer.js_is_checking_web3.js_version..." + Web3.version );
 
 console.log(document.getElementById('id100').value)
 
-mycontract.methods.setnumber(tmp_info).send({from: migi[0] }
+// mycontract.methods.setnumber(tmp_info).send({from: migi[0] }
 
 // var tmp_info;
 // function w_function1( hidari , migi ){ mycontract.methods.setnumber(tmp_info).send({from: migi[0] });}
