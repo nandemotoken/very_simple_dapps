@@ -1,5 +1,52 @@
-//環境設定
-var Address = "0x66325a60194e087388ac11c92909a5c5ba170876";
+//---------------環境設定-----------------
+//remixのボタンを押して取得したコントラクトアドレスを貼り付け
+const Address = "0x300359Af32c7964E6DDafe79C12E3024dc7539C7";
+
+//remixのボタンを押して取得したABIを貼り付け
+const ABI = [
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "n",
+        "type": "uint256"
+      }
+    ],
+    "name": "setnumber",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "get3",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getnumber",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
 
 //metamaskの準備
 web3js = new Web3(web3.currentProvider);	
@@ -7,18 +54,8 @@ web3js = new Web3(web3.currentProvider);
 mycontract = new web3js.eth.Contract(ABI , Address);
 
 //1.00-beta.36と表示されるのが正しい
-console.log( Web3.version );
+console.log( "writer.js_metamask_check_" + Web3.version );
 
-
-//---------------------write-------------------------
-//コントラクトのwrite処理は次の書式に統一します。
-//定義
-//function w_functionN( hidari , migi ){ mycontract.methods.setnumber(setnum).send({from: migi[0] });}
-//
-//利用
-//web3js.eth.getAccounts( w_functionN );
-//...metamaskの準備が出来たらw_functionNを実行する
-//--------------------------------------------------
 
 
 var tmp_info;

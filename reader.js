@@ -63,7 +63,7 @@ window.onload = function () {
   mycontract = new web3js.eth.Contract(ABI, Address);
 
   //1.00-beta.36と表示されるのが正しい
-  console.log(Web3.version);
+  console.log("reader.js_metamask_check_" + Web3.version);
 
 
   mycontract.methods.get3().call().then((fromblockchain1) => {
