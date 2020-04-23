@@ -49,9 +49,10 @@ const ABI = [
 	}
 ]
 
-//--------------メイン処理---------------
+//metamask login処理
+ethereum.enable().then(console.log);
 
-
+//--------------ここからメイン処理---------------
 //------web3.jsの読み込み待ちのため、window.onloadにメイン処理を入れる--------
 
 window.onload = function (){
@@ -64,8 +65,11 @@ mycontract = new web3js.eth.Contract(ABI , Address);
 //1.00-beta.36と表示されるのが正しい
 console.log( Web3.version );
 
-//metamask login処理
-ethereum.enable().then(console.log);
+
+mycontract.methods.get3().call().then(r_function1);
+mycontract.methods.getnumber().call().then(r_function1);
+
+
 
 //---------------------read--------------------------
 //コントラクトのread処理は次の書式に統一します。
@@ -80,8 +84,6 @@ ethereum.enable().then(console.log);
 }
 
 function r_function1( r_result1 ){ console.log(r_result1); }
-mycontract.methods.get3().call().then(r_function1);
-mycontract.methods.getnumber().call().then(r_function1);
 
 
 
